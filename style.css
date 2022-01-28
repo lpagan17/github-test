@@ -1,0 +1,232 @@
+html {
+  /* Setting a base font size of 10px give us easier rem calculations
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
+  font-size: 10px;
+}
+
+body {
+  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+a {
+  color: #477ca7;
+}
+
+a:visited {
+  color: #74638f;
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #eee;
+}
+
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+@keyframes idle-animation {
+  0% {
+      transform: translateZ( -60px ) rotateY(  -50deg ) rotateX(  -38deg ) rotateZ(   35deg );
+  }
+  
+  25% {
+    transform: rotateY( 110deg ) rotateX( 0deg ) rotateZ( 180deg ) translateZ( -60px );
+  }  
+  
+  50% {
+    transform: translateZ( -60px ) rotateY(  72deg ) rotateX( 73deg ) rotateZ(  42deg ) ;
+  }
+  
+  75% {
+    transform: translateZ( -60px ) rotateY( 268deg ) rotateX( 58deg ) rotateZ( 180deg );
+  }  
+  
+  100% {
+    transform: translateZ( -60px ) rotateY(  -50deg ) rotateX(  -38deg ) rotateZ(   35deg );
+  }
+}
+
+.container {
+  width: 190px;
+  height: 190px;
+  position: relative;
+  margin: 100px auto;
+  display: block;
+  -webkit-perspective: 1000;
+}
+
+.d-20 {
+  position: absolute;
+  transform: translateZ( -60px ) rotateY(  -50deg ) rotateX(  -38deg ) rotateZ(   35deg );
+   
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  animation: idle-animation 15s infinite;}
+  
+  figure-1 {
+    width: 189px;
+    height: 188px;
+    display: block;
+    position: absolute;
+    font-size: 70px;
+    line-height: 190px;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: #000 -1px -1px 0px, #fff 1px 1px 0px;
+    color: #f1f1f1;
+    backface-visibility: hidden;
+    margin: 0;
+    background: url('https://matthewlein.com/content/experiments/00-20-sided-die/blue.png') top center no-repeat;}
+    
+    .underline {
+      text-decoration: underline;
+    }
+
+  .face01 {
+    transform: rotateY(36deg) rotateX(53deg) rotateZ(0deg) translateZ(120px);
+  }
+  
+  .face02 {
+    transform: rotateY( 180deg ) rotateX( 11deg ) rotateZ( 300deg ) translateZ( 120px );
+  }
+  
+  .face03 {
+    transform: rotateY( 144deg ) rotateX( -11deg ) rotateZ(   0deg ) translateZ( 120px );
+  }
+  
+  .face04 {
+    transform: rotateY( 253deg ) rotateX( 53deg ) rotateZ( 120deg ) translateZ( 120px );
+  }
+  
+  .face05 {
+    transform: rotateY( 253deg ) rotateX( 11deg ) rotateZ( 300deg ) translateZ( 120px );
+  }
+  
+  .face06 {
+    transform: rotateY( 108deg ) rotateX( 53deg ) rotateZ( 240deg ) translateZ( 120px );
+  }
+  
+  .face07 {
+    transform: rotateY( 216deg ) rotateX( -11deg ) rotateZ(   0deg ) translateZ( 120px );
+  }
+  
+  .face08 {
+    transform: rotateY( 180deg ) rotateX( 53deg ) rotateZ( 240deg ) translateZ( 120px );
+  }
+  
+  .face09 {
+    transform: rotateY( 108deg ) rotateX( 11deg ) rotateZ( 180deg ) translateZ( 120px );
+  }
+  
+  .face10 {
+    transform: rotateY( 324deg ) rotateX( 53deg ) rotateZ(   0deg ) translateZ( 120px );
+  }
+  
+  .face11 {
+    transform: rotateY( 144deg ) rotateX( -53deg ) rotateZ( 180deg ) translateZ( 120px );
+  }
+  
+  .face12 {
+    transform: rotateY(   0deg ) rotateX( -11deg ) rotateZ( 120deg ) translateZ( 120px );
+  }
+  
+  .face13 {
+    transform: rotateY(  36deg ) rotateX( 11deg ) rotateZ( 180deg ) translateZ( 120px );
+  }
+  
+  .face14 {
+    transform: rotateY( 288deg ) rotateX( -53deg ) rotateZ(  60deg ) translateZ( 120px );
+  }
+  
+  .face15 {
+    transform: rotateY( 288deg ) rotateX( -11deg ) rotateZ( 120deg ) translateZ( 120px );
+  }
+  
+  .face16 {
+    transform: rotateY(  72deg ) rotateX( -53deg ) rotateZ(  60deg ) translateZ( 120px );
+  }
+  
+  .face17 {
+    transform: rotateY( 324deg ) rotateX( 11deg ) rotateZ( 180deg ) translateZ( 120px );
+  }
+  
+  .face18 {
+    transform: rotateY(   0deg ) rotateX( -53deg ) rotateZ(  60deg ) translateZ( 120px );
+  }
+  
+  .face19 {
+    transform: rotateY(  72deg ) rotateX( -11deg ) rotateZ(   0deg ) translateZ( 120px );
+  }
+  
+  .face20 {
+    transform: rotateY( 216deg ) rotateX( -53deg ) rotateZ( 180deg ) translateZ( 120px );
+  }
